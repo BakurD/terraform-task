@@ -1,5 +1,7 @@
 {
     "project_name": "my-project",
+    "provider_name": ["ah", "vulter"],
+    "source": "{% if cookiecutter.provider_name == 'ah' %}./ah{% elif cookiecutter.provider_name == 'vulter' %}./vulter{% endif %}",
     "domain_list_file": "domain_list.txt",
     "server_count": "5"
   }
